@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Kalkulator JS</title>
+        <link rel="stylesheet" href="kalkulator.css">
+    </head>
+    <body>
+    <h1>Kalkulator</h1>
+    <div class="kalkulator">
+        <div class="field">
+            <input type="text" placeholder="Angka" id="opand1" >
+            <input type="text" placeholder="Angka" id="opand2" >
+        </div>
+        <div class="operator">
+            <button onclick="showresult('1')">+</button>
+            <button onclick="showresult('2')">-</button>
+            <button onclick="showresult('3')">*</button>
+            <button onclick="showresult('4')">/</button>
+        </div>
+        <div class="hasil">
+            <input type="text" id='result' readonly placeholder="Hasil">
+        </div>
+    </div>
+    </body>
+    <script type="text/javascript">
+        function showresult(choice){
+        var n1=parseFloat(document.getElementById('opand1').value);
+        var n2=parseFloat(document.getElementById('opand2').value);
+        var r;
+            var c=choice;
+            if(c=='1'){
+                r=n1+n2;
+            }
+            else if(c=='2'){
+                r=n1-n2;
+            }
+            else if(c=='3'){
+                r=n1*n2;
+            }
+            else if(c=='4'){
+                r=n1/n2;
+            }
+            document.getElementById('result').value = r;
+        }
+    </script>
+</html>
