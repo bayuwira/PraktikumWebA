@@ -1,0 +1,7 @@
+user : 
+    email : user1@perpustakaan.com
+    password : 123
+
+admin : 
+    email : admin@perpustakaan.com
+    password : 123
